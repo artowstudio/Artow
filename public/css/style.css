@@ -1,0 +1,1741 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+
+}
+
+@media only screen and (min-width:1000px){
+    .MyLogo{
+        width: 50%;
+        text-align: center;
+    }
+    .SignUp{
+        height: 80vh;
+    }
+}
+
+
+
+nav{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Sign Up Css Starts Here */
+.SignUp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpContents form input{
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #868686 ;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.SignUpCheckBox  label {
+    border: 2px solid red;
+}   
+
+
+.SignUpContents form input:hover::placeholder{
+    font-weight: 400;
+    color: black;
+}
+
+.SignUpContents form div:hover i{
+    color: rgb(0, 221, 0);
+    font-size: large;
+}
+
+
+
+.SignUpImg{
+    display: flex;
+    justify-content: center;
+
+}
+
+.SignUpLastLInk{
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.SignUpLastLInk:hover{
+    color: red;
+}
+
+
+
+
+
+
+/*Main Header Work*/
+
+.main_header{
+    background: url("../images/MainImg/headerImg.jpg") center center/cover;
+    min-height: 60vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+.Main_Header_Content h1{
+    color: white;
+    font-size: 4rem;
+    z-index: 1;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+
+.HeaderButtons{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.FirstRow .HeaderImg img{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.FirstRow .HeaderImg img:hover{
+    box-shadow:2px 2px 10px rgba(255,255,255,1),2px 2px 10px rgba(255,255,255,1);
+}
+
+
+
+.Header_Second_Row_Heading{
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* About Section Design */
+.secondSection{
+    background-color: rgb(0, 0, 0);
+    /* background-color: #fff; */
+}
+
+.secondSection p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.secondSection h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+
+.secondSection .AboutImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection .AboutImage img{
+    transition: all 0.4s ease;
+}
+
+.secondSection:hover .AboutImage img{
+    filter: drop-shadow(5px 5px 3px #e802fd);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Wave Section Editing */
+.waveMain_section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waveMain_section .wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#295afa;
+}
+
+.waveMain_section .wave span{
+    position: absolute;
+    width: 325vh;
+    height: 325vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    background:#000;
+
+}
+
+.waveMain_section .wave span:nth-child(1){
+    animation: animate 5s linear infinite;
+    border-radius: 45%;
+    background: rgba(20,20,20,1);
+}
+
+
+
+.waveMain_section .wave span:nth-child(2){
+    animation: animate 10s linear infinite;
+    border-radius: 40%;
+    background: rgba(20,20,20,0.5);
+}
+
+
+.waveMain_section .wave span:nth-child(3){
+    animation: animate 15s linear infinite;
+    border-radius: 42.5%;
+    background: rgba(20,20,20,0.5);
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}
+
+.waveMain_section .Mycontent{
+    position: relative;
+    top: -130px;
+    z-index: 1;
+    color: #fff;
+    /* font-size: 4em; */
+}
+
+
+
+.waveMain_section .Mycontent .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.waveMain_section .Mycontent  .ReadMoreBth{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(9, 255, 0);
+    color: black;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+}   
+
+.waveMain_section .Mycontent  .ReadMoreBth:hover{
+    background-color: rgb(116, 0, 170);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Our Team Area Styling*/
+.teamArea{
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    background:#000;
+}
+
+.teamArea .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.teamArea .TeamCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.teamArea .TeamCard .imgHolder{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.teamArea .TeamCard:nth-child(1) .imgHolder{
+
+    background: url("https://abhishek-portfolio-new.herokuapp.com/images/img2.jpeg") center center/cover;
+}
+
+.teamArea .TeamCard:nth-child(2) .imgHolder{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4vEyIIj3yM9ho0H7pmuowKSb4br2nVcQew&usqp=CAU") center center/cover;
+}
+
+
+.teamArea .TeamCard:nth-child(3) .imgHolder{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-RjVeAZ2qGql4lbXCLKhkq0xcun0KoJKbPQ&usqp=CAU") center center/cover;
+}
+ 
+
+
+.teamArea .SecondCardRow .TeamCard:nth-child(1) .imgHolder{
+    background:url("https://i.pinimg.com/originals/97/ce/80/97ce806be381c28b2785c6793428a730.png") center center/cover ;
+}
+
+
+
+.teamArea .SecondCardRow .TeamCard:nth-child(3) .imgHolder{
+    background:url("https://images.edexlive.com/uploads/user/imagelibrary/2019/6/18/original/priya311.jpg") center center/cover ;
+}
+
+
+
+.teamArea .SecondCardRow .TeamCard:nth-child(2) .imgHolder{
+    background:url("https://jpninfo.com/wp-content/uploads/2017/09/happy-girl-ok.jpg") center center/cover ;
+}
+
+
+
+
+.teamArea .TeamCard{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    color: white;
+    margin: 30px 0px;
+    transition: all 0.5s ease;
+}
+.teamArea .TeamCard:hover{
+    box-shadow: 3.91px 3.91px 10px #C9C9C9, -3.91px -3.91px 10px #FFFFFF;
+}
+
+
+.teamArea .TeamCard h1{
+    padding: 5px;
+}
+
+.teamArea .TeamCard p{
+    text-align: center;
+    padding: 5px;
+}
+
+
+.teamArea .TeamCard .starHolder{
+    text-align: center;
+    padding-bottom: 10px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+/* Header Design // Freelancer Clone */
+
+.Main-Header{
+    overflow: hidden;
+}
+
+
+
+/* Second Layer */
+.secondLayer{
+    background-color: #000;
+}
+
+.secondLayer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondLayer .row .col .UpperPart{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.secondLayer .row .col  p{
+    text-align: justify;
+}
+
+
+.secondLayer .row .col .UpperPart img{
+    height: 100px !important;
+    width: 100px !important;
+}
+
+
+
+.ThreeBtn{
+    display: flex;
+    justify-content: space-around;
+    /* width: 50%; */
+  }
+
+
+  .ThreeBtn a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Third Layer Design */
+.thirdLayer{
+    overflow: hidden;
+}
+
+.thirdLayer .row .col .card{
+    overflow: hidden !important;
+    border: none;
+    cursor: pointer;
+    width: 20rem;
+    margin: 10px;
+}
+
+
+.thirdLayer .row .col .card img{
+    width: 100%;
+    height: 20rem;
+    transition: all 0.5s ease;
+}
+
+.thirdLayer .row .col .card a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.thirdLayer .row .col .card img:hover{
+    transform: scale(1.1);
+}
+
+
+.buttonholder{
+    text-align: center;
+    padding: 20px;
+}
+
+.buttonholder a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+.buttonholder a:hover{
+    background-color: salmon;
+    color: black;
+    font-weight: 1000;
+}
+
+
+
+
+
+
+
+/* <!------------ Fourth Layer Design --------------->  */
+
+.fourthLayer{
+    color: black;
+}
+
+.fourthLayer .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fourthLayer .row .CARDCOMPONENT{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;   
+    transition: all 0.2s ease;
+}
+
+
+.fourthLayer .row .CARDCOMPONENT .imgHolder{
+    margin-left:-15px ;
+}
+
+
+.fourthLayer .row .CARDCOMPONENT .CardContent{
+    height: 100%;
+    padding: 10px;
+}
+
+.fourthLayer .row .CARDCOMPONENT .CardContent p{
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width:1400px){
+    .fourthLayer{   
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* Footer Design */
+
+    footer {
+        background: #161e2c;
+        color: #f7f7f7;
+    }
+
+    footer .row .FirstPart a{
+        display: block;
+        text-decoration: none;
+        color: #eee;
+    }
+
+    footer .row .FirstPart a:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    footer .SocialMediacarrier{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    footer .SocialMediacarrier a{
+        font-size: 30px;
+    }
+
+    footer .SocialMediacarrier a:nth-child(1):hover{
+        color: rgb(19, 54, 207);
+    }
+    footer .SocialMediacarrier a:nth-child(2):hover{
+        color: rgb(19, 160, 207);
+    }
+    footer .SocialMediacarrier a:nth-child(3):hover{
+        color: rgb(207, 19, 19);
+    }
+    footer .SocialMediacarrier a:nth-child(4):hover{
+        color: rgb(207, 19, 122);
+    }
+
+
+
+
+
+
+
+
+/* Contact  Section Css */
+.ContactArea .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* <!-- Error Page Design --> */
+
+.Error-Section .row ,.ErrorBtn_Carrier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Error-Section .row .ErrorBtn{
+    padding: 7px 20px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;    
+    background-image: linear-gradient( 109.6deg,  rgba(0,0,0,1) 11.2%, rgba(11,132,145,1) 91.1% );
+}
+
+.Error-Section .row .ErrorBtn:hover{
+    background-image: linear-gradient( 109.6deg,  rgb(128, 128, 128) 11.2%, rgb(2, 57, 63) 91.1% );
+}
+
+
+.ErrorBtn_Carrier{
+    text-align: center;
+}
+
+
+
+
+
+/* Browse Jobs Page */
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input{
+    width: 100%;
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.CardallHolder{
+    cursor: pointer;
+    padding: 20px;
+    background: #fff;
+    transition: all 0.5s ease;
+    border-top: 1px solid #868688;
+}
+
+.CardallHolder:hover{
+    background-color: #e9dddd;
+}
+
+.BrowseCards a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.taglist a{
+    padding: 10px;
+}
+
+.BrowseCards p{
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+.CardDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CardDetails p span{
+    font-weight: 800;
+}
+
+
+.CardDetails a{
+    text-decoration: none;
+    background: rgb(29, 216, 29);
+    padding:10px;
+    color: #000;
+    font-weight: 600;
+}
+
+
+
+
+/* Hire Artist Cards */
+.ArtistCardComponent{
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.1s ease;
+}
+
+.ArtistCardComponent .ArtistHireArea a{
+    text-decoration: none;
+    background: rgb(0, 221, 0);
+    padding: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.ArtistCardComponent .ArtistHireArea p{
+    font-weight: 600;
+}
+
+
+.ArtistCardComponent:hover{
+    border-left: 5px solid rgb(0, 174, 255);
+}
+
+.ArtistCardComponent .ratingsblock{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+
+.ArtistCardComponent .ratingsblock .fa-star{
+    color: rgb(255, 187, 0);
+}
+
+.ArtistCardComponent .ratingsblock .imp{
+    background: yellow;
+    padding: 5px 5px;
+}
+
+
+
+
+
+
+
+/* Post Job */
+
+.PostPageCompanyImg,.job-post-headings,.job-post-img,.job-post-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-post-headings h1{
+    text-align: center;
+}
+
+.job-post-img img{
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.job-post-img img:hover{
+    transform: skew(-5deg);
+    filter: drop-shadow(1px 1px 5px rgba(255,255,255,1));
+}
+
+
+@media only screen and (max-width:576px){
+    .PostPageCompanyImg{
+        display: none;
+    }
+}
+
+
+
+.job-post-content{
+    overflow: hidden;
+    color: white;
+}
+
+.job-post-content .content-1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.job-post-content .content-1 input,textarea{
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.job-post-content .content-2{
+    display: flex;
+}
+
+.job-post-content .content-2 input{
+    outline: none !important;
+}
+
+
+.job-post-content button{
+    outline: none;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* Messages Edits */
+
+.artist-messages-profile{
+    background: rgb(255, 254, 254);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.artist-messages-profile .artist-messages-dp img{
+    width: 50px;
+    height: 50px;
+}
+
+.artist-messages-profile .artist-messages-name a{
+    text-decoration: none;
+}
+
+
+.artist-messages-profile:hover{
+    background: #eee;
+}
+
+
+
+
+
+/* Inner Messages */
+.One-chat p,.two-chat p{
+    padding: 10px;
+    margin: 10px;
+    background: #eee;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.two-chat p{
+    float: right;
+}
+
+
+
+
+/* Profile Area Edit */
+
+.Profile .row{
+    background: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.f-img{
+    background: url("../images/extraimages/img1.jpg") center center/cover;
+}
+
+.upperpart h4,.f-content h3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.upperpart h4 a,.f-content h3 a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-weight: 500;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.upperpart h4 a:hover,.f-content h3 a:hover{
+    background: rgb(22, 22, 22);
+}
+
+
+.row00{
+    display: none;
+}
+
+.row0{
+    display: none;
+}
+
+
+@media only screen and (max-width:998px){
+    .row0{
+        display: block;
+    }
+    .row00{
+        display: block;
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        background: url("../images/extraimages/img1.jpg") center center/cover;
+        
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .row2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row2 .CardPart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+    }
+    .row2 .CardPart img{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+@media only screen and (max-width:380px){
+    .upperpart h4,.f-content h3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upperpart h4 a ,.f-content h3 a{
+        width: 50%;
+        text-align: center;
+    }
+
+    .f-content p{
+        font-size: 80%;
+    }
+}
+
+
+
+
+/* Edit Profile Design */
+
+.edit-profile{
+    margin: 10px;
+    padding: 30px;
+}
+
+.edit-profile .MyIMg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-profile .Editing-profile-data{
+    color: white;
+}
+
+
+.edit-profile .Editing-profile-data .form-items{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.edit-profile .Editing-profile-data .form-items input{
+    outline: none;
+}
+
+
+/* Store Design */
+.store-all-holder{
+    min-height: 20vh;
+    width: 100%;
+    margin: auto;
+}
+
+.store-main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.store-main-content .buttonCarrier{
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-main-content .buttonCarrier a{
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+
+.store-main-content .mypaaraaa{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+.products-section h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.products-section .Product-card-design{
+    cursor: pointer;
+    background: #FFFFFF;
+    background: #eee;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.products-section .Products-Row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.products-section .Product-card-design:hover{
+    box-shadow: 2px 2px 20px rgba(255,255,255,1),-2px -2px 20px rgba(255,255,255,1);
+}
+
+.products-section .Product-card-design img{
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.products-section .Product-card-design a{
+    text-decoration: none;
+}
+
+.products-section .Product-card-design .product-content .buy-btn{
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.products-section .Product-card-design img:hover{
+    transform: scale(1.2);
+}
+
+.products-section .Product-card-design .product-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+@media only screen and (max-width:992px){
+    .store-all-holder h1,.store-all-holder h3{
+        font-size: 20px;
+    }
+    .store-main-content .buttonCarrier a{
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .store-all-holder h1,.store-all-holder h3{
+        font-size: 15px;
+    }
+    .store-main-content .buttonCarrier a{
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .store-all-holder .firstRow{
+        padding: 10px;
+    }
+    .products-section .Products-Row{
+        flex-direction: column;
+        margin:0px 50px;
+    }
+    .products-section .Products-Row .col{
+        margin: 10px 0px;
+    }
+    .store-main-content .buttonCarrier{
+        flex-direction: column;
+    }
+    .store-all-holder h1{
+        font-size: 15px;
+    }
+    .store-all-holder h3{
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width:456px){
+    .store-all-holder h1{
+        font-size: 12px;
+    }
+    .store-main-content .buttonCarrier a{
+        font-size: 10px;
+        padding: 2px;
+    }
+}
+
+
+@media only screen and (max-width:375px){
+    .store-all-holder h1{
+        font-size: 10px;
+    }
+    .breaker{
+        display: none;
+    }
+    .products-section .Products-Row{
+        flex-direction: column;
+        margin:0px 20px;
+    }
+}
+
+
+@media only screen and (max-width:280px){
+    .store-all-holder h3,.store-all-holder h1,.store-all-holder .buttonCarrier a{
+        font-size:5px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Sell Art */
+.sell-art{
+    padding: 100px;
+}
+
+.sellart-row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-art .sell-art-form{
+    padding: 20px;
+}
+
+.sell-art .sell-art-form .form-items{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.sell-art .sell-art-form .form-items input{
+    outline: none;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+
+
+
+@media only screen and (max-width:360px){
+    .sell-art .sell-art-form .form-items{
+        width: 120%;
+        margin-left: -30px;
+    }
+}
+
+
+
+
+
+/* Auction Design */
+
+.auction-areas{
+    padding: 30px;
+    color: white;
+}
+
+.auction-areas .auction-first-row-content,.auction-areas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auction-card-row-huu-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.auction-bid-cards{
+    background: #fff;
+    color: black;
+    padding:0px;
+    border-radius: 10px;
+}
+
+.card-bid-content{
+    padding: 10px;
+}
+.img-holder-card{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-holder-card img{
+    transition: all 0.5s ease;
+}
+
+.img-holder-card img:hover{
+    transform: scale(1.1);
+}
+
+.card-bid-content h6{
+    font-weight: 600;
+
+}
+
+
+
+@media only screen and (max-width:768px){
+    .auction-card-row-huu-main .col{
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .auction-card-row-huu-main,.auction-areas .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .auction-areas .row{
+        font-size:10px;
+    }
+    .auction-first-row-content h1,.auction-first-row-content h2,.auction-first-row-content h3{
+        font-size: 15px;
+    }
+    .auction-areas{
+        padding: 0px;
+        padding-top: 10px;
+    }
+    .auction-areas .row .col{
+        padding-bottom:10px ;
+    }
+
+
+    .auction-card-row-huu-main{
+        margin: 0px 30px;
+    }
+}
+
+
+@media only screen and (max-width:360px){
+    .auction-first-row-content h1,.auction-first-row-content h2,.auction-first-row-content h3{
+        font-size: 12px;
+    }
+    .todaysDealHeading h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width:1100px){
+    .ThreeBtn a {
+        font-size: 2rem;
+      }    
+
+}
+
+
+@media only screen and (max-width:992px){
+    .FirstRow .col{
+        margin-top:20px;
+    }
+
+ 
+  .ThreeBtn a {
+    font-size: 2rem;
+  }
+
+  .Profile .row1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+}
+
+
+
+@media only screen and (max-width:768px){
+    .SignUpContents form input{
+        width: 90%;
+    }
+
+    .SignUpContents h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .thirdLayer .row{
+        width: 70%;
+        margin: auto;
+    }
+
+    .ThreeBtn a {
+        font-size: 1rem;
+      }
+    
+      /* Hire Artist */
+    .ArtistImage, .ArtistCardComponent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ratingsblock {
+        width: 100% !important;
+        padding: 10px;
+    }
+
+    .ArtistHireArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* sell art */
+    .sell-art{
+        padding: 50px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:576px){
+    .SignUp .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .SignUp .row .col{
+        margin: 40px 0px;
+    }
+    .SignUpContents h1{
+        font-size: 2.5rem;
+    }
+
+    /* Index Page */
+    .Main_Header_Content h1{
+        font-size: 3rem;
+    }
+
+    .HeaderButtons{
+        width: 100%;
+    }
+
+    .FirstRow,.secondSection .row,.teamArea .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    /* About Section */
+    .secondSection .row .AboutContent{
+        margin-top: 30px;
+    }
+
+    /* Team Cards */
+    .teamArea .row{
+        margin: 0px 20px;
+    }
+
+
+    /* Wave Design */
+    
+    .waveMain_section .Mycontent{
+    top: -35px;
+    }
+
+    /* Second Layer Design */
+
+    .secondLayer .row{
+        flex-direction: column;
+    }
+    .secondLayer .row .col{
+        padding: 10px 30px;
+    }
+
+    /* Third Layer Design */
+    
+    .thirdLayer .row{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Footer Design  */
+    footer .row .helper{
+        display: none;
+    }
+    footer .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+    }
+
+    footer .FSecondLayer .FooterLayerTwo{
+        padding: 5px;
+    }
+    
+    .ErrorBtn_Carrier{
+        text-align: center;
+    }
+    .CardallHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+    .CardallHolder .col{
+        padding: 5px;
+    }
+
+    /* Artist Hire */
+    .ArtistCardComponent{
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    /* Job Post */
+    .JobPost .secondrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 10px;
+        font-size: 10px;
+    }
+
+
+    /* Message Profile Selection */
+    .artist-messages-profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: 5px auto;
+        cursor: pointer;
+    }
+    
+    /* Inner Message */
+    .One-chat p,.two-chat p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Sell Art */
+    .sellart-row-1{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+
+
+@media only screen and (max-width:500px){
+        /* Third Layer Design */
+        .thirdLayer .row{
+            width: 100%;
+            margin-left: 30px;
+        }
+}
+
+
+
+@media only screen and (max-width:420px){
+    /* Index Page */
+    .Main_Header_Content h1{
+        font-size: 2.5rem;
+    }
+    
+    .HeaderButtons a{
+        font-size: 0.8rem;
+    }
+     /* Third Layer Design */
+     .thirdLayer .row{
+        margin-left: 20px;
+    }
+    .ThreeBtn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ThreeBtn a{
+        width: 50%;
+        margin: 10px 0px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 800;
+    }
+}
+
+
+
+@media only screen and (max-width:388px){
+    .thirdLayer .row .col .card{
+        margin-left:0px;
+        width: 18rem;
+    }
+    .CardallHolder{
+        margin: 0px 10px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:360px){
+    .SignUpContents h1{
+        font-size: 2rem;
+    }
+    
+    /* Index Page */
+    .Main_Header_Content h1{
+        font-size: 2rem;
+    }
+
+    .secondLayer{
+        font-size: 80%;
+    }
+
+    /* Job Post */
+    .job-post-content{
+        overflow: visible;
+    }
+
+    .JobPost .secondrow{
+        width: 50%;
+        margin: auto;
+    }
+
+    .JobPost .secondrow .col{
+        margin: 10px 0px;
+    }
+    .JobPost .secondrow .job-post-content .content-1 h3{
+        font-size: 130%;
+        text-align: center;
+    }
+
+    /* Messages Profile */
+
+    .artist-messages-profile .artist-messages-name h1{
+        font-size: 20px;
+    }
+
+} 
+
+
+@media only screen and (max-width:345px){
+      /* Third Layer Design */
+      .thirdLayer .row .col .card{
+        width: 17rem;
+        height: 26rem;
+        margin-left:-10px ;
+    }
+}
+
+@media only screen and (max-width:320px){
+      /* Third Layer Design */
+      .thirdLayer .row .col .card{
+        margin-left: -20px;
+    }
+    .ThreeBtn a{
+        width: 80%;
+        margin: 10px 0px;
+    }
+}
+
+
+@media only screen and (max-width:300px){
+    
+    .waveMain_section .Mycontent{
+        font-size: 13px;
+        top: -45px;
+    }
+    .secondLayer h1{
+        font-size: 19px;
+    }
+
+    .secondLayer h3{
+        font-size: 15px;
+    }
+      /* Third Layer Design */
+      .thirdLayer .row .col .card{
+        width: 15rem;
+        height: 26rem;
+    }
+
+
+ 
+}
+
+
+
+@media only screen and (max-width:275px){
+   
+    .teamArea{
+        font-size: 10px;
+    }  
+    .teamArea h1{
+        font-size: 20px;
+    }
+        .teamArea .TeamCard h1{
+        font-size: 14px;
+    }
+      /* Third Layer Design */
+      .thirdLayer .row .col .card{
+        width: 13rem;
+        height: 26rem;
+    }
+}
+
+
+@media only screen and (max-width:250px){
+      /* Third Layer Design */
+      .thirdLayer .row .col .card{
+        width: 11rem;
+        height: 25rem;
+    }
+}
