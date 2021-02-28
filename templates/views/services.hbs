@@ -40,6 +40,16 @@
   body {
     background-color: rgb(0, 0, 0);
   }
+
+  .parahaiyeh{
+    font-size:14px;
+  }
+
+  @media only screen and (max-width:768px){
+    .parahaiyeh{
+      font-size: 11px;
+    }
+  }
 </style>
 
 <body>
@@ -65,9 +75,9 @@
     <div class="Mycontent">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-6 col-sm-12 col-md-12">
+          <div class="col col-lg-12 col-sm-12 col-md-12">
             <h2>Our Services</h2>
-            <p style="text-align: justify; font-size:10px;">1.Easy access to prospective buyers. <br>
+            <p style="text-align: justify; width:100%;" class="parahaiyeh">1.Easy access to prospective buyers. <br>
               ARTOW helps it’s artist to reach out to the prospective buyers easily from the targeted audience,which
               results in smooth functioning of trade and communication with the buyer and artists. <br>
 
@@ -103,7 +113,7 @@
               </span>
             </p>
 
-            <a href="#" class="ReadMoreBth">Read More</a>
+            {{!-- <a href="#" class="ReadMoreBth">Read More</a> --}}
           </div>
         </div>
       </div>
